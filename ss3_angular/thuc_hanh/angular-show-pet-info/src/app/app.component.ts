@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'module5';
-  // arr=["mot","hai","ba"];
-  num : number =0;
+  title = 'angular-show-pet-info';
 }

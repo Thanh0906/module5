@@ -20,50 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e485f019-9136-4bc7-8f0d-07f9b4064945" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../.idea/module5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tinh_tong_cac_so_fibonacci.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/cau_dieu_kien_va_vong_lap/.idea/cau_dieu_kien_va_vong_lap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/cau_dieu_kien_va_vong_lap/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/cau_dieu_kien_va_vong_lap/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/cau_dieu_kien_va_vong_lap/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/khai_bao_su_dung_bien/.idea/khai_bao_su_dung_bien.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/khai_bao_su_dung_bien/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/khai_bao_su_dung_bien/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/khai_bao_su_dung_bien/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/kiem_tra_so_nguyen_to/.idea/kiem_tra_so_nguyen_to.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/kiem_tra_so_nguyen_to/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/kiem_tra_so_nguyen_to/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/kiem_tra_so_nguyen_to/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/.idea/promise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/promise/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/.idea/xay_dung_doi_tuong_hinh_hoc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/src/IArea.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/src/rectangle.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/src/shape.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thuc_hanh/xay_dung_doi_tuong_hinh_hoc/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../New Text Document.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/bien_va_kieu_du_lieu/typescript-demo" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/bien_va_kieu_du_lieu/typescript-demo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -81,8 +52,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\win\Desktop\module5\ss2_type\bai_tap\tinh_tong_cac_so_fibonacci\node_modules\typescript\lib" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -95,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638240180647</updated>
       <workItem from="1638240181785" duration="849000" />
+      <workItem from="1638326415513" duration="1007000" />
     </task>
     <servers />
   </component>
@@ -111,11 +84,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="420" y="82" key="FileChooserDialogImpl" timestamp="1638261289721">
+    <state x="420" y="82" key="FileChooserDialogImpl" timestamp="1638329626798">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="420" y="82" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1638261289721" />
+    <state x="420" y="82" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1638329626798" />
   </component>
 </project>

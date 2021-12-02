@@ -6,12 +6,26 @@ import { AppComponent } from './app.component';
 import { ListStudentsComponent } from './list-students/list-students.component';
 import {FormsModule} from "@angular/forms";
 import { CustomerComponent } from './customer/customer.component';
+import { HighLightDirective } from './high-light.directive';
+import { TestCustomerDirectiveComponent } from './test-customer-directive/test-customer-directive.component';
+import { AppNotDirective } from './app-not.directive';
+import { TestPipeComponent } from './test-pipe/test-pipe.component';
+import { TestCustomPipeComponent } from './test-custom-pipe/test-custom-pipe.component';
+import { TempConverterPipe } from './temp-converter.pipe';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListStudentsComponent,
-    CustomerComponent
+    CustomerComponent,
+    HighLightDirective,
+    TestCustomerDirectiveComponent,
+    AppNotDirective,
+    TestPipeComponent,
+    TestCustomPipeComponent,
+    TempConverterPipe,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

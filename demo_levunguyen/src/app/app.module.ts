@@ -13,6 +13,8 @@ import { TestPipeComponent } from './test-pipe/test-pipe.component';
 import { TestCustomPipeComponent } from './test-custom-pipe/test-custom-pipe.component';
 import { TempConverterPipe } from './temp-converter.pipe';
 import { ChildComponent } from './child/child.component';
+import { ProductPageComponent } from './product-page/product-page.component';
+import { StockStatusComponent } from './stock-status/stock-status.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ChildComponent } from './child/child.component';
     TestPipeComponent,
     TestCustomPipeComponent,
     TempConverterPipe,
-    ChildComponent
+    ChildComponent,
+    ProductPageComponent,
+    StockStatusComponent
   ],
   imports: [
     BrowserModule,

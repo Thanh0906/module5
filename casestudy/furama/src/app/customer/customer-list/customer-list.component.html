@@ -1,1 +1,43 @@
-<p>customer-list works!</p>
+<h1>List Customer</h1>
+<table class="table table-hover table-striped">
+  <thead>
+  <tr>
+    <th scope="col">No.</th>
+    <th scope="col">Id</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Gender</th>
+    <th scope="col">Id card</th>
+    <th scope="col">Number Phone</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Customer type</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let customer of customerList; index as i">
+    <th>{{i + 1}}</th>
+    <td>{{customer.id}}</td>
+    <td>{{customer.customerName}}</td>
+    <td>{{customer.customerBirthday }}</td>
+    <td [ngSwitch]="customer.gender">
+      <span *ngSwitchCase="0">Male</span>
+      <span *ngSwitchCase="1">Female</span>
+      <span *ngSwitchCase="2">LGBT</span>
+    </td>
+    <td>{{customer.idCard}}</td>
+    <td>{{customer.numberPhone}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.address}}</td>
+    <td>{{customer.customerType}}</td>
+    <td>
+      <a >Edit</a>
+    </td>
+    <td>
+      <a >Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</table>

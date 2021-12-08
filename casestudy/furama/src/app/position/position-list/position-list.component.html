@@ -1,0 +1,17 @@
+<h1>List Position</h1>
+<table >
+  <thead>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody >
+  <tr *ngFor="let position of positionList;index as i">
+    <td>{{position.id}}</td>
+    <td>{{position.name}}</td>
+  </tr>
+  </tbody>
+</table>

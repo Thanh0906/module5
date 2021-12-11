@@ -7,17 +7,7 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./employee-create.component.css']
 })
 export class EmployeeCreateComponent implements OnInit {
-//  id?: number;
-//   name?: string;
-//   birthday?: string;
-//   idCard?: string;
-//   salary?: string;
-//   phone?: string;
-//   email?:string;
-//   address?: string;
-//   positionId?: any;
-//   educationDegreeId?: any;
-//   divisionId?: any;
+
 employeeForm = new FormGroup({
   id : new FormControl(''),
   name : new FormControl(''),

@@ -1,1 +1,140 @@
-<p>customer-edit works!</p>
+<h2 >Edit employee</h2>
+<div >
+  <form [formGroup]="customerForm" (ngSubmit)="updateCustomer(id)" novalidate>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="id" class="form-label">Id</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="id" formControlName="id" disabled>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="name" class="form-label">Name</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="name" formControlName="name" aria-describedby="nameError">
+        <div id="nameError" class="form-text text-danger" *ngIf="!customerName.valid && (customerName.dirty || customerName.touched)">
+          <div [hidden]="!customerCode.errors.required">
+            Họ tên không được để trống!!!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="customerBirthday" class="form-label">Date of birth</label>
+      </div>
+      <div class="col-8">
+        <input type="date" class="form-control" id="customerBirthday" formControlName="customerBirthday"
+               aria-describedby="customerBirthdayError">
+        <div id="customerBirthdayError" class="form-text text-danger"
+             *ngIf="!customerBirthday.valid && (customerBirthday.dirty || customerBirthday.touched)">
+          <div [hidden]="!customerBirthday.errors.required">
+            Ngày sinh không được để trống!!!
+          </div>
+          <div [hidden]="!customerBirthday.errors.pattern">
+            Ngày sinh phải có định dạng là DD/MM/YYYY
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label>Gender </label>
+      </div>
+      <div class="col-8">
+        <input type="radio" value="0" name="gender" formControlName="gender"
+               aria-describedby="genderError" checked> Male
+        <input type="radio" value="1" name="gender" formControlName="gender"
+               aria-describedby="genderError" checked> Female
+        <input type="radio" value="2" name="gender" formControlName="gender"
+               aria-describedby="genderError" checked> LGBT
+        <div id="genderError" class="form-text text-danger" *ngIf="!gender.valid && (gender.dirty || gender.touched)">
+          Giới tính không được để trống
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="idCard" class="form-label">Id card</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="idCard" formControlName="idCard" aria-describedby="idCardError">
+        <div id="idCardError" class="form-text text-danger" *ngIf="!idCard.valid && (idCard.dirty || idCard.touched)">
+          <div [hidden]="!idCard.errors.required">
+            Số CMND không được để trống!!!
+          </div>
+          <div [hidden]="!idCard.errors.pattern">
+            Số CMND phải có định dạng là XXXXXXXXX (9 số) hoặc XXXXXXXXXXXX (12 số) (X là số 0-9)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="numberPhone" class="form-label">Phone</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="numberPhone" formControlName="phone" aria-describedby="phoneError">
+        <div id="numberPhoneError" class="form-text text-danger" *ngIf="!numberPhone.valid && (numberPhone.dirty || numberPhone.touched)">
+          <div [hidden]="!numberPhone.errors.required">
+            Số điện thoại không được để trống!!!
+          </div>
+          <div [hidden]="!numberPhone.errors.pattern">
+            Số điện thoại phải có định dạng là 090xxxxxxx hoặc 091xxxxxxx hoặc (84)+90xxxxxxx hoặc (84)+91xxxxxxx
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="email" class="form-label">Email</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="email" formControlName="email" aria-describedby="emailError">
+        <div id="emailError" class="form-text text-danger" *ngIf="!email.valid && (email.dirty || email.touched)">
+          <div [hidden]="!email.errors.required">
+            Email không được để trống!!!
+          </div>
+          <div [hidden]="!email.errors.pattern">
+            Email phải đúng định dạng!!!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label for="address" class="form-label">Address</label>
+      </div>
+      <div class="col-8">
+        <input type="text" class="form-control" id="address" formControlName="address" aria-describedby="addressError">
+        <div id="addressError" class="form-text text-danger"
+             *ngIf="!address.valid && (address.dirty || address.touched)">
+          <div [hidden]="!address.errors.required">
+            Địa chỉ không được để trống!!!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4">
+        <label  class="form-label">Customer type</label>
+      </div>
+      <div class="col-8">
+
+        <div id="customerTypeError" class="form-text text-danger"
+             *ngIf="!customerType.valid && (customerType.dirty || customerType.touched)">
+          Loại khách không được để trống
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-4"></div>
+      <div class="col-8">
+       <button></button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,1 +1,38 @@
-<p>service-list works!</p>
+<h1>Services list</h1>
+<a routerLink="/service/create">Create new services</a>
+<table class="table table-hover table-striped">
+  <thead>
+  <tr>
+    <th >Stt</th>
+    <th >Id</th>
+    <th >Name</th>
+    <th >Area</th>
+    <th >Floor</th>
+    <th >Max people</th>
+    <th >Cost</th>
+    <th >Status</th>
+    <th >Rent type</th>
+    <th >Edit</th>
+    <th >Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let services of serviceList; index as i">
+    <th>{{i + 1}}</th>
+    <td>{{services.id}}</td>
+    <td>{{services.name}}</td>
+    <td>{{services.area}}</td>
+    <td>{{services.numberOfFloors}}</td>
+    <td>{{services.maxPeople}}</td>
+    <td>{{services.cost}}</td>
+    <td>{{services.poolArea}}</td>
+    <td>{{services.rentTypeId.name}}</td>
+    <td>
+      <a routerLink="/service/edit">Edit</a>
+    </td>
+    <td>
+      <a routerLink="/service/delete">Delete</a>
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CustomerType} from "../../modle/customer-type";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-customer-type-create',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer-type-create.component.css']
 })
 export class CustomerTypeCreateComponent implements OnInit {
+  customerTypeForm = new FormGroup({
+    id: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required])
+  })
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  saveCustomerType() {
+
+  }
 }

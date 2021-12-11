@@ -1,13 +1,12 @@
+import {RentType} from "./rent-type";
+
 export interface Services {
-  id?: number;
+  id?: string;
   name?: string;
   area?: number;
-  cost?: string;
+  floor?: number;
   maxPeople?: number;
-  rentTypeId?: any;
-  serviceTypeId?: any;
-  standardRoom?: number;
-  description?: string;
-  poolArea?: number;
-  numberOfFloors?: number;
+  cost?: number;
+  status?: string;
+  rentType?: RentType;
 }

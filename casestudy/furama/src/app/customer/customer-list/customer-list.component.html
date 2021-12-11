@@ -1,17 +1,19 @@
-<h1>List Customer</h1>
+<h1>Customer list</h1>
+<button routerLink="/customer/create" class="btn btn-primary">Create new customer</button>
 <table class="table table-hover table-striped">
   <thead>
   <tr>
     <th scope="col">No.</th>
     <th scope="col">Id</th>
     <th scope="col">Name</th>
-    <th scope="col">Birthday</th>
+    <th scope="col">Date of Birth</th>
     <th scope="col">Gender</th>
     <th scope="col">Id card</th>
-    <th scope="col">Number Phone</th>
+    <th scope="col">Phone</th>
     <th scope="col">Email</th>
     <th scope="col">Address</th>
     <th scope="col">Customer type</th>
+    <th scope="col">Details</th>
     <th scope="col">Edit</th>
     <th scope="col">Delete</th>
   </tr>
@@ -20,24 +22,26 @@
   <tr *ngFor="let customer of customerList; index as i">
     <th>{{i + 1}}</th>
     <td>{{customer.id}}</td>
-    <td>{{customer.customerName}}</td>
-    <td>{{customer.customerBirthday }}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.dateOfBirth | date: 'dd-MM-yyyy'}}</td>
     <td [ngSwitch]="customer.gender">
       <span *ngSwitchCase="0">Male</span>
       <span *ngSwitchCase="1">Female</span>
       <span *ngSwitchCase="2">LGBT</span>
     </td>
     <td>{{customer.idCard}}</td>
-    <td>{{customer.numberPhone}}</td>
+    <td>{{customer.phone}}</td>
     <td>{{customer.email}}</td>
     <td>{{customer.address}}</td>
-    <td>{{customer.customerType}}</td>
+    <td>{{customer.customerType.name}}</td>
     <td>
-      <a >Edit</a>
+     <button class="btn btn-warning"> Edit</button>
     </td>
     <td>
-      <a >Delete</a>
+      <button class="btn btn-warning">Delete
+      </button>
     </td>
+
   </tr>
   </tbody>
 </table>

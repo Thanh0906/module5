@@ -1,1 +1,16 @@
-<p>customer-type-create works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <form [formGroup]="customerTypeForm" (ngSubmit)="saveCustomerType()" >
+      <div class="mb-2">
+        <label for="id" class="form-label">Id</label>
+        <input type="text" class="form-control" id="id" formControlName="id">
+      </div>
+      <div class="mb-2">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name">
+      </div>
+    </form>
+    <button [disabled]="customerTypeForm.valid">Create</button>
+  </div>
+</div>
+

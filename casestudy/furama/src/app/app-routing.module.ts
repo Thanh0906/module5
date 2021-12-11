@@ -1,17 +1,30 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {CustomerListComponent} from "./customer/customer-list/customer-list.component";
-import {CustomerCreateComponent} from "./customer/customer-create/customer-create.component";
-import {EmployeeListComponent} from "./employee/employee-list/employee-list.component";
-import {EmployeeCreateComponent} from "./employee/employee-create/employee-create.component";
+
 
 
 
 const routes: Routes = [
-  {path :'customerList', component: CustomerListComponent},
-  {path : 'customerCreate',component: CustomerCreateComponent},
-  {path :'employeeList',component: EmployeeListComponent},
-  {path : 'employeeCreate',component: EmployeeCreateComponent}
+  {
+    path:'customer',
+    loadChildren:()=>import('./customer/customer.module').then(module=>module.CustomerModule)
+  },
+  {
+    path:'employee',
+    loadChildren:()=>import('./employee/employee.module').then(module=>module.EmployeeModule)
+  },
+  {
+    path:'service',
+    loadChildren:()=>import('./service/service.module').then(module=>module.ServiceModule)
+  },
+  {
+    path:'contract',
+    loadChildren:()=>import('./contract/contract.module').then(module=>module.ContractModule)
+  },
+  {
+    path:'contract-detail',
+    loadChildren:()=>import('./contract-detail/contract-detail.module').then(module=>module.ContractDetailModule)
+  },
 ];
 
 @NgModule({

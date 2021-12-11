@@ -1,1 +1,53 @@
-<p>contract-create works!</p>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3"></div>
+
+    <div class="col-6">
+      <form [formGroup]="contractForm" (ngSubmit)="saveContract()">
+        <div class="mb-2">
+          <label for="id" class="form-label">Start Date</label>
+          <input type="date" class="form-control" id="id" formControlName="id" aria-describedby="idError">
+
+        <div class="mb-2">
+          <label for="name" class="form-label">End Date</label>
+          <input type="text" class="form-control" id="name" formControlName="customerName"
+                 aria-describedby="customerNameError">
+          </div>
+        </div>
+        <div class="mb-2">
+          <label for="birthDay" class="form-label">Deposit</label>
+          <input type="date" class="form-control" id="birthDay" formControlName="customerBirthday"
+                 aria-describedby="customerBirthdayError">
+        </div>
+
+        <div class="mb-2">
+          <label for="idCard" class="form-label">Total Money</label>
+          <input type="number" class="form-control" id="idCard" formControlName="idCard" aria-describedby="idCardError">
+
+        </div>
+        <div class="mb-2">
+          <label for="phone" class="form-label">Employee</label>
+          <input type="text" class="form-control" id="phone" formControlName="numberPhone"
+                 aria-describedby="numberPhoneCardError">
+        </div>
+        <div class="mb-2">
+          <label for="email" class="form-label">Customer</label>
+          <input type="text" class="form-control" id="email" formControlName="email" aria-describedby="emailError">
+        </div>
+        <div class="mb-2">
+          <label for="address" class="form-label">Service</label>
+          <input type="text" class="form-control" id="address" formControlName="address"
+                 aria-describedby="addressError">
+        </div>
+
+        <div class="mb-2">
+          <button type="submit" class="btn btn-primary" [disabled]="!contractForm.valid">Create</button>
+          <button type="submit" class="btn btn-primary">Cancel</button>
+        </div>
+
+      </form>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>

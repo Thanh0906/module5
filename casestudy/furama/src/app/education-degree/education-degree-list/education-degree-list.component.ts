@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EducationDegree} from "../../modle/education-degree";
 
 @Component({
   selector: 'app-education-degree-list',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education-degree-list.component.css']
 })
 export class EducationDegreeListComponent implements OnInit {
-
+  educationDegreeList : EducationDegree[] =[];
   constructor() { }
 
   ngOnInit(): void {

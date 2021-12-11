@@ -1,12 +1,12 @@
 <h1>Employee list</h1>
-<a href="">Create Employee</a>
+<button  class="btn btn-primary">Create new employee</button>
 <table class="table table-hover table-striped">
   <thead>
   <tr>
     <th scope="col">No.</th>
     <th scope="col">Id</th>
     <th scope="col">Name</th>
-    <th scope="col">Birthday</th>
+    <th scope="col">Date of Birth</th>
     <th scope="col">Id card</th>
     <th scope="col">Salary</th>
     <th scope="col">Phone</th>
@@ -24,20 +24,20 @@
     <th>{{i + 1}}</th>
     <td>{{employee.id}}</td>
     <td>{{employee.name}}</td>
-    <td>{{employee.birthday }}</td>
+    <td>{{employee.dateOfBirth | date: 'dd-MM-yyyy'}}</td>
     <td>{{employee.idCard}}</td>
     <td>{{employee.salary}}</td>
     <td>{{employee.phone}}</td>
     <td>{{employee.email}}</td>
     <td>{{employee.address}}</td>
-    <td>{{employee.positionId}}</td>
-    <td>{{employee.educationDegreeId}}</td>
-    <td>{{employee.divisionId}}</td>
+    <td>{{employee.position}}</td>
+    <td>{{employee.educationDegree.name}}</td>
+    <td>{{employee.division.name}}</td>
     <td>
-      <a href="">Edit</a>
+    <button>Edit</button>
     </td>
     <td>
-      <a href="">Delete</a>
+     <button>Delete</button>
     </td>
   </tr>
   </tbody>

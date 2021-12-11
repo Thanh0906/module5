@@ -1,1 +1,25 @@
-<p>education-degree-list works!</p>
+<h1>List Division</h1>
+<table>
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>Name</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ed of educationDegreeList;index as i">
+    <td>{{ed.id}}</td>
+    <td>{{ed.name}}</td>
+    <td>
+      <a href="">Edit</a>
+    </td>
+    <td>
+      <a href="">Delete</a>
+    </td>
+
+  </tr>
+  </tbody>
+</table>
+
